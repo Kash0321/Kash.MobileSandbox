@@ -9,9 +9,19 @@ namespace Kash.MobileSandbox
 {
     public partial class MainPage : ContentPage
     {
+        int Executions { get; set; } = 0;
+
         public MainPage()
         {
             InitializeComponent();
+
+            cmdExecute.Clicked += CmdExecute_Clicked;
+        }
+
+        private void CmdExecute_Clicked(object sender, EventArgs e)
+        {
+            Executions++;
+            lblMessage.Text = $"Botón pulsado {Executions} veces";
         }
     }
 }

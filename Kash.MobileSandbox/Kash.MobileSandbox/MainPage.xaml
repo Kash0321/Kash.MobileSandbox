@@ -4,8 +4,9 @@
              xmlns:local="clr-namespace:Kash.MobileSandbox"
              x:Class="Kash.MobileSandbox.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+    <Button x:Name="cmdExecute" Text="PÚLSAME" />
+    <Label x:Name="lblMessage" Text="Welcome to Xamarin Forms!" />
+</StackLayout>
 
 </ContentPage>
